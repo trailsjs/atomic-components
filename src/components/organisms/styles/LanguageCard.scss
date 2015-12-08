@@ -1,0 +1,32 @@
+@font-face {
+  font-family: 'devicons';
+  src: url('../../../assets/fonts/devicons.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.card {
+  text-align: left;
+  display: inline-block;
+  width: 160px;
+  height: 160px;
+  vertical-align: top;
+  background-color: #f9f9f9;
+  border-radius: 2px;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.125);
+}
+
+.devicons {
+  font-family: 'devicons';
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  font-size: 5em;
+  color: darkgrey;
+
+  &:before{
+    content: '\e600';
+  }
+}
