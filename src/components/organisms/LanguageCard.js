@@ -1,6 +1,8 @@
 //from Takeahike
 import React, { Component } from 'react';
-import styles from './styles/LanguageCard.scss';
+import localStyles from './styles/LanguageCard.scss';
+
+const styles = Object.assign({}, localStyles);
 
 export default class LanguageCard extends Component {
   render() {
