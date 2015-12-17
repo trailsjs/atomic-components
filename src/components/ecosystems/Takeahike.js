@@ -1,5 +1,9 @@
 //from App
+
+// Globals
 import React, { Component } from 'react';
+
+// Styles
 import styles from './styles/Takeahike.scss';
 import LanguageCard from '../organisms/LanguageCard';
 
