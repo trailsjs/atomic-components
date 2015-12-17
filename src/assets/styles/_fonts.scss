@@ -1,8 +1,15 @@
 @font-face {
-	font-family: 'devicons';
-	src: url('src/assets/fonts/devicons.woff') format('woff');
-	font-weight: normal;
-	font-style: normal;
+  font-family: 'devicons';
+  src: url('src/assets/fonts/devicons.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'opensansemoji';
+  src: url('src/assets/fonts/OpenSansEmoji.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
 
 @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css);
