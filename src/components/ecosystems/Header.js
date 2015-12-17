@@ -8,12 +8,13 @@ import CommandLine from '../molecules/CommandLine';
 import Title from '../molecules/Title';
 
 // Styles
-import styles from './styles/Header.scss';
+import localStyles from './styles/Header.scss';
+const styles = Object.assign({}, localStyles);
 
 export default class Header extends Component {
   render() {
     return (
-      <div>
+      <div className={`${styles.flexContainer}`}>
         <Title />
         <CommandLine />
       </div>
