@@ -1,9 +1,4 @@
-@font-face {
-  font-family: 'devicons';
-  src: url('src/assets/fonts/devicons.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
+@import "src/assets/styles/fonts";
 
 .card {
   text-align: left;
@@ -36,4 +31,8 @@
   &:before{
     content: '\e600';
   }
+}
+
+.testingFont {
+  font-family: 'dosis';
 }
