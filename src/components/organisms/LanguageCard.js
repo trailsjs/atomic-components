@@ -12,7 +12,6 @@ export default class LanguageCard extends Component {
     return (
       <div className={`${styles.card}`}>
         <span className={`${styles.devicons}`}></span>
-        <span className={`${styles.testingFont}`}> testing </span>
       </div>
     );
   }
