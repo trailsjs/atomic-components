@@ -11,7 +11,7 @@ export default class LanguageCard extends Component {
   render() {
     return (
       <div className={`${styles.card}`}>
-        <span className={`${styles.devicons}`}></span>
+        <img className={`${styles.image}`} src={require('src/assets/images/logos/passport.svg')}></img>
       </div>
     );
   }

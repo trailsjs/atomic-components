@@ -12,7 +12,7 @@ export default class Title extends Component {
     return (
       <div className="styles.flexContainer">
         <div>
-          I'm a tree emoji
+          I'm the tree emoji
         </div>
         <div>
           I'm the big word

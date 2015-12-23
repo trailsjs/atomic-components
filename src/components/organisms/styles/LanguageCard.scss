@@ -18,17 +18,6 @@
   }
 }
 
-.devicons {
-  font-family: 'devicons';
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  font-size: 6em;
-  color: #34495e;
-
-  &:before{
-    content: '\e600';
-  }
+.image {
+  width: 80px;
 }
