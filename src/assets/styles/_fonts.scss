@@ -5,6 +5,13 @@
 	font-style: normal;
 }
 
+@font-face {
+	font-family: 'emoji';
+	src: url('src/assets/fonts/OpenSansEmoji.ttf') format('ttf');
+	font-weight: normal;
+	font-style: normal;
+}
+
 //<i class="fa fa-nameoficon"></i>
 @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css);
 
