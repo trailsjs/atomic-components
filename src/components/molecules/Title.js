@@ -14,10 +14,10 @@ export default class Title extends Component {
         <div className={`${styles.treeEmoji}`}>
           <span></span>
         </div>
-        <div className={`${styles.title} ${styles.sharedTitle}`}>
+        <div className={`${styles.title} ${styles.sharedTitle} ${styles.insetText}`}>
           <span>TrailsMix</span>
         </div>
-        <div className={`${styles.subtitle} ${styles.sharedTitle}`}>
+        <div className={`${styles.subtitle} ${styles.sharedTitle} ${styles.insetText}`}>
           <span>Blaze Your Own Trails</span>
         </div>
       </div>

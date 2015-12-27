@@ -7,7 +7,7 @@
 
 .treeEmoji {
   font-family: 'emoji';
-  font-size: 72pt;
+  font-size: 96pt;
   &:after {
     content: "\1F332";
   }
@@ -16,12 +16,28 @@
 
 .sharedTitle {
   text-align: center;
+  font-family: 'dosis';
+
 }
 
 .title {
-
+  font-family: Dosis;
+  font-weight: 700;
+  font-size: 72px;
+  color: #3F864F;
+  line-height: 91px;
 }
 
 .subtitle {
+  font-family: Dosis;
+  font-size: 48px;
+  color: #3F864F;
+  line-height: 60px;
+}
 
+.insetText {
+  span {
+    color: #C2E8AD;
+    text-shadow: 0 -1px 0 #9FBE8E, 0 0 2px white;
+  }
 }
