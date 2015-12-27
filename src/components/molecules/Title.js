@@ -11,14 +11,14 @@ export default class Title extends Component {
   render() {
     return (
       <div className="styles.flexContainer">
-        <div>
-          <span className={`${styles.treeEmoji}`}></span>
+        <div className={`${styles.treeEmoji}`}>
+          <span></span>
         </div>
-        <div>
-          I'm the big word
+        <div className={`${styles.title} ${styles.sharedTitle}`}>
+          <span>TrailsMix</span>
         </div>
-        <div>
-          I'm the little word
+        <div className={`${styles.subtitle} ${styles.sharedTitle}`}>
+          <span>Blaze Your Own Trails</span>
         </div>
       </div>
     );

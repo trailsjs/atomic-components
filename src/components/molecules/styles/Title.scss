@@ -2,11 +2,26 @@
 
 .flexContainer {
   display: flex;
+  justify-content: center;
 }
 
 .treeEmoji {
   font-family: 'emoji';
+  font-size: 72pt;
   &:after {
     content: "\1F332";
   }
+  text-align: center;
+}
+
+.sharedTitle {
+  text-align: center;
+}
+
+.title {
+
+}
+
+.subtitle {
+
 }
