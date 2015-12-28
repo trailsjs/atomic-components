@@ -2,14 +2,15 @@
   display: flex;
   align-items: center;
   padding: 0 20px;
+  margin-top: 50px;
 }
 
 .box {
   width: 600px;
   height: 50px;
+
   background: #F9F9F9;
   box-shadow: 1px 2px 3px 1px rgba(0,0,0,0.10);
-  /* $ yo trails-grunt-we: */
   font-family: Input-Regular;
   font-size: 24px;
   color: #797979;

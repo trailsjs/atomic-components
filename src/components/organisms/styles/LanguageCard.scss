@@ -14,7 +14,8 @@
   align-items: center;
 
   &.selected {
-    background: black;
+    background: rgba(69,162,152,0.13);
+    box-shadow: inset 1px 2px 3px 1px rgba(0,0,0,0.13);
   }
 
   &:hover {
