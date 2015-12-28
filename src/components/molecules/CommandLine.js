@@ -9,7 +9,7 @@ import styles from './styles/CommandLine.scss';
 export default class CommandLine extends Component {
   render() {
     return (
-      <div>
+      <div className={`${styles.flexContainer} ${styles.box}`}>$
       </div>
     );
   }
