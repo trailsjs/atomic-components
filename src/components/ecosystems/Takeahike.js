@@ -3,20 +3,17 @@
 // Globals
 import React, { Component } from 'react';
 
+// Components
+import CardRow from '../ecosystems/CardRow';
+
 // Styles
 import styles from './styles/Takeahike.scss';
-import LanguageCard from '../organisms/LanguageCard';
-import InfoIcon from '../atoms/InfoIcon';
-import CardRow from '../ecosystems/CardRow';
 
 export default class Takeahike extends Component {
   render() {
     return (
-      <div className={`${styles.flexContainer}`}>
+      <div className={`${styles.Takeahike}`}>
         <CardRow />
-        <InfoIcon />
-        <LanguageCard />
-        <LanguageCard />
       </div>
     );
   }
