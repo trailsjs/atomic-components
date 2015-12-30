@@ -14,6 +14,9 @@ export default class Takeahike extends Component {
     return (
       <div className={`${styles.Takeahike}`}>
         <CardRow />
+        <CardRow />
+        <CardRow />
+        <CardRow />
       </div>
     );
   }
