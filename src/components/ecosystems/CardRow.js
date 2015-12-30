@@ -6,6 +6,7 @@ import React, { Component } from 'react';
 // Components
 import LanguageCard from '../organisms/LanguageCard';
 import InfoIcon from '../atoms/InfoIcon';
+import NoChoiceCard from '../organisms/NoChoiceCard';
 
 // Styles
 import localStyles from './styles/CardRow.scss';
@@ -17,7 +18,7 @@ export default class CardRow extends Component {
       <div className={`${styles.CardRow}`}>
         <InfoIcon />
         <div className={`${styles.LanguageCardContainer}`}>
-          <LanguageCard />
+          <NoChoiceCard />
           <LanguageCard />
           <LanguageCard />
           <LanguageCard />
