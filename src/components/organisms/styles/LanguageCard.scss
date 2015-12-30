@@ -12,8 +12,15 @@
   margin: 20px 15px;
 
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
+
+  .image {
+    max-width: 100px;
+    max-height: 100px;
+    padding-top: 20px;
+  }
 
   &.selected {
     background: rgba(69,162,152,0.125);
@@ -27,9 +34,4 @@
   &:hover {
     background-color: #F1F0F0;
   }
-}
-
-.image {
-  max-width: 100px;
-  max-height: 100px;
 }
