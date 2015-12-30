@@ -4,12 +4,13 @@
 import React, { Component } from 'react';
 
 // Styles
-import styles from './styles/HelpIcon.scss';
+import styles from './styles/CommandText.scss';
 
-export default class HelpIcon extends Component {
+export default class CommandText extends Component {
   render() {
     return (
-      <div>help
+      <div>
+        CommandText
       </div>
     );
   }
