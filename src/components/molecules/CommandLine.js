@@ -14,7 +14,7 @@ import styles from './styles/CommandLine.scss';
 export default class CommandLine extends Component {
   render() {
     return (
-      <div className={`${styles.flexContainer} ${styles.box}`}>
+      <div className={`${styles.flexContainer} ${styles.CommandLine}`}>
         <div className={`${styles.flexContainer}`}>
           <BashDollar />
           <CommandText />
