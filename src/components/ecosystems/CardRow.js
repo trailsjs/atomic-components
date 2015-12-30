@@ -16,8 +16,13 @@ export default class CardRow extends Component {
     return (
       <div className={`${styles.CardRow}`}>
         <InfoIcon />
-        <LanguageCard />
-        <LanguageCard />
+        <div className={`${styles.LanguageCardContainer}`}>
+          <LanguageCard />
+          <LanguageCard />
+          <LanguageCard />
+          <LanguageCard />
+          <LanguageCard />
+        </div>
       </div>
     );
   }
