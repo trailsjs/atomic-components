@@ -13,10 +13,14 @@ export default class Takeahike extends Component {
   render() {
     return (
       <div className={`${styles.Takeahike}`}>
-        <CardRow />
-        <CardRow />
-        <CardRow />
-        <CardRow />
+        <div className={`${styles.flexLeft}`}></div>
+        <div className={`${styles.flexMiddle}`}>
+          <CardRow />
+          <CardRow />
+          <CardRow />
+          <CardRow />
+        </div>
+        <div className={`${styles.flexRight}`}></div>
       </div>
     );
   }
