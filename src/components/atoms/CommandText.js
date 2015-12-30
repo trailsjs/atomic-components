@@ -9,7 +9,7 @@ import styles from './styles/CommandText.scss';
 export default class CommandText extends Component {
   render() {
     return (
-      <div>
+      <div className={`${styles.CommandText}`}>
         CommandText
       </div>
     );
