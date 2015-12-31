@@ -5,15 +5,6 @@
   justify-content: center;
 }
 
-.treeEmoji {
-  font-family: 'emoji';
-  font-size: 96pt;
-  &:after {
-    content: "\1F332";
-  }
-  text-align: center;
-}
-
 .sharedTitle {
   text-align: center;
   font-family: 'dosis';
@@ -41,4 +32,9 @@
     color: #C2E8AD;
     text-shadow: 0 -1px 0 #9FBE8E, 0 0 2px white;
   }
+}
+
+.logo {
+  height: 125px;
+  margin: 50px 0;
 }
