@@ -8,7 +8,7 @@
 .sharedTitle {
   text-align: center;
   font-family: 'dosis';
-
+  display: inline-block;
 }
 
 .title {
@@ -21,10 +21,11 @@
 
 .subtitle {
   font-family: Dosis;
-  font-weight: 500;
-  font-size: 48px;
+  font-weight: 800;
+  font-size: 130px;
   color: #3F864F;
   line-height: 60px;
+  margin-left: 5px;
 }
 
 .insetText {
@@ -36,5 +37,5 @@
 
 .logo {
   height: 125px;
-  margin: 50px 0;
+  display: inline-block;
 }

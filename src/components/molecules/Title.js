@@ -13,7 +13,7 @@ export default class Title extends Component {
       <div className="styles.flexContainer">
         <img src={require('src/assets/images/logo.svg')} className={`${styles.logo}`} />
         <div className={`${styles.subtitle} ${styles.sharedTitle} ${styles.insetText}`}>
-          <span>Blaze Your Own Trails</span>
+          <span>mix</span>
         </div>
       </div>
     );
