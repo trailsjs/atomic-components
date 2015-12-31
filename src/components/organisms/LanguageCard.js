@@ -15,7 +15,7 @@ export default class LanguageCard extends Component {
     return (
       <div className={`${styles.LanguageCard}`}>
         <div>
-          <img className={`${styles.image}`} src={require('src/assets/images/logos/grunt.svg')}></img>
+          <img className={`${styles.image}`} src={require('src/assets/images/logos/bower.svg')}></img>
         </div>
         <CardName />
       </div>

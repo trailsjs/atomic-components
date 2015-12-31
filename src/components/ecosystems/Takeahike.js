@@ -15,10 +15,10 @@ export default class Takeahike extends Component {
       <div className={`${styles.Takeahike}`}>
         <div className={`${styles.flexLeft}`}></div>
         <div className={`${styles.flexMiddle}`}>
-          <CardRow />
-          <CardRow />
-          <CardRow />
-          <CardRow />
+          <CardRow type="taskrunner" />
+          <CardRow type="frontend"/>
+          <CardRow type="router"/>
+          <CardRow type="auth"/>
         </div>
         <div className={`${styles.flexRight}`}></div>
       </div>
