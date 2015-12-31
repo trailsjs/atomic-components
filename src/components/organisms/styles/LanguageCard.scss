@@ -16,10 +16,17 @@
   justify-content: space-between;
   align-items: center;
 
-  .image {
-    max-width: 100px;
-    max-height: 100px;
-    padding-top: 20px;
+  div {
+
+    display: flex;
+    justify-content: center;
+
+    .image {
+      max-width: 100px;
+      max-height: 100px;
+      padding-top: 20px;
+    }
+
   }
 
   &.selected {
