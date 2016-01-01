@@ -23,7 +23,6 @@ export default class CardRow extends Component {
           <LanguageCard />
           <LanguageCard />
           <LanguageCard />
-          <LanguageCard />
         </div>
       </div>
     );

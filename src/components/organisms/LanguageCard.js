@@ -1,4 +1,4 @@
-//from Takeahike
+//from CardRow
 
 // Globals
 import React, { Component } from 'react';
@@ -17,7 +17,7 @@ export default class LanguageCard extends Component {
         <div>
           <img className={`${styles.image}`} src={require('src/assets/images/logos/bower.svg')}></img>
         </div>
-        <CardName />
+        <CardName isSelected={false}/>
       </div>
     );
   }
