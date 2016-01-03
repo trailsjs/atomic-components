@@ -3,26 +3,30 @@ export const SELECT_FRONTEND_CARD = 'SELECT_FRONTEND_CARD';
 export const SELECT_ROUTER_CARD = 'SELECT_ROUTER_CARD';
 export const SELECT_AUTH_CARD = 'SELECT_AUTH_CARD';
 
-export function selectTaskRunnerCard() {
+export function selectTaskRunnerCard(id) {
   return {
-    type: SELECT_TASKRUNNER_CARD
+    type: SELECT_TASKRUNNER_CARD,
+    id
   }
 }
 
-export function selectFrontEndCard() {
+export function selectFrontEndCard(id) {
   return {
-    type: SELECT_FRONTEND_CARD
+    type: SELECT_FRONTEND_CARD,
+    id
   }
 }
 
-export function selectRouterCard() {
+export function selectRouterCard(id) {
   return {
-    type: SELECT_ROUTER_CARD
+    type: SELECT_ROUTER_CARD,
+    id
   }
 }
 
-export function selectAuthCard() {
+export function selectAuthCard(id) {
   return {
-    type: SELECT_AUTH_CARD
+    type: SELECT_AUTH_CARD,
+    id
   }
 }

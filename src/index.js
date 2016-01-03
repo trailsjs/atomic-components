@@ -1,7 +1,12 @@
+// Globals
 import React from 'react';
 import { render } from 'react-dom';
-import TrailsMix from './components/environments/TrailsMix';
 import { Provider } from 'react-redux';
+
+// Components
+import TrailsMix from './components/environments/TrailsMix';
+
+// Utils
 import configureStore from './utils/configureStore';
 
 const store = configureStore();
