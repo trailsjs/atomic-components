@@ -21,7 +21,7 @@ import data from '../../utils/cardData';
 
 function selectAndMap(state) {
   const { selectedTaskRunner } = state;
-  return { selectedTaskRunner };
+  return {selectedTaskRunner};
 }
 
 @connect(selectAndMap)
@@ -29,14 +29,18 @@ export default class CardRow extends Component {
   render() {
     const { dispatch } = this.props;
     return (
-      <div className={`${styles.CardRow}`} onClick={function () {
-      dispatch(selectTaskRunnerCard('bufm'))
-      }}>
+      <div className={`${styles.CardRow}`}>
         <InfoIcon />
         <div className={`${styles.LanguageCardContainer}`}>
           <NoChoiceCard />
-          {data[this.props.type].map(function(thing, id) {
-            return <LanguageCard thing={thing} key={id}/>
+          {data[this.props.type].map(function (item, id) {
+            return (
+              <LanguageCard
+                pictureName={item}
+                key={id}
+                selectCard={() => {dispatch(selectTaskRunnerCard(item))}}
+              />
+            )
           })}
         </div>
       </div>

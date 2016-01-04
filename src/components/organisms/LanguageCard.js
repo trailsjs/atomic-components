@@ -12,16 +12,11 @@ const styles = Object.assign({}, localStyles);
 
 export default class LanguageCard extends Component {
 
-  handleClick(e) {
-    e.preventDefault();
-    console.log(this);
-  }
-
   render() {
     return (
-      <div className={`${styles.LanguageCard}`} onClick={this.handleClick}>
+      <div className={`${styles.LanguageCard}`} onClick={this.props.selectCard}>
         <div>
-          <img className={`${styles.image}`} src={require(`src/assets/images/logos/${this.props.thing}.svg`)}></img>
+          <img className={`${styles.image}`} src={require(`src/assets/images/logos/${this.props.pictureName}.svg`)}></img>
         </div>
         <CardName isSelected={false}/>
       </div>
@@ -30,5 +25,6 @@ export default class LanguageCard extends Component {
 }
 
 LanguageCard.propTypes = {
-  thing: React.PropTypes.string.isRequired
+  pictureName: React.PropTypes.string.isRequired,
+  selectCard: React.PropTypes.func.isRequired
 };
