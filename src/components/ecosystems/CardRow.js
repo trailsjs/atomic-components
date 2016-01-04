@@ -20,8 +20,17 @@ import { selectTaskRunnerCard } from '../../actions/actions';
 import data from '../../utils/cardData';
 
 function selectAndMap(state) {
-  const { selectedTaskRunner } = state;
-  return {selectedTaskRunner};
+  const {
+    selectedTaskRunner,
+    selectedFrontEnd,
+    selectedRouter,
+    selectedAuth } = state;
+  return {
+    selectedTaskRunner,
+    selectedFrontEnd,
+    selectedRouter,
+    selectedAuth
+  };
 }
 
 @connect(selectAndMap)
@@ -33,11 +42,11 @@ export default class CardRow extends Component {
         case 'taskrunner':
           return selectTaskRunnerCard;
         case 'frontend':
-          return true;
+          return selectedFrontEnd;
         case 'router':
-          return true;
+          return selectedRouter;
         case 'auth':
-          return true;
+          return selectedAuth;
       }
     };
 
