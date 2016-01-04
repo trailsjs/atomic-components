@@ -28,6 +28,19 @@ function selectAndMap(state) {
 export default class CardRow extends Component {
   render() {
     const { dispatch } = this.props;
+    const selectFunc = () => {
+      switch (this.props.type) {
+        case 'taskrunner':
+          return selectTaskRunnerCard;
+        case 'frontend':
+          return true;
+        case 'router':
+          return true;
+        case 'auth':
+          return true;
+      }
+    };
+
     return (
       <div className={`${styles.CardRow}`}>
         <InfoIcon />
@@ -38,7 +51,7 @@ export default class CardRow extends Component {
               <LanguageCard
                 pictureName={item}
                 key={id}
-                selectCard={() => {dispatch(selectTaskRunnerCard(item))}}
+                selectCard={() => {dispatch(selectFunc()(item))}}
               />
             )
           })}

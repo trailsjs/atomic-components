@@ -10,7 +10,7 @@ function selectedTaskRunner(state = {}, action) {
   switch (action.type) {
     case SELECT_TASKRUNNER_CARD:
       return Object.assign({}, state, {
-        [action.id]: 'hello'
+        [action.id]: 'selected'
       });
     default:
       return state;
