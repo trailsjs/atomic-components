@@ -1,4 +1,4 @@
-//from Takeahike
+//from LanguageCard
 
 // Globals
 import React, { Component } from 'react';
@@ -11,12 +11,13 @@ export default class CardName extends Component {
   render() {
     return (
       <div className={`${styles.CardName} ${this.props.isSelected ? styles.selected : null}`}>
-        Card Name
+        {this.props.cardName}
       </div>
     );
   }
 }
 
 CardName.propTypes = {
+  cardName: React.PropTypes.string.isRequired,
   isSelected: React.PropTypes.bool.isRequired
 };

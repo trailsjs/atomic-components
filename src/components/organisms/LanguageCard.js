@@ -18,7 +18,7 @@ export default class LanguageCard extends Component {
         <div>
           <img className={`${styles.image}`} src={require(`src/assets/images/logos/${this.props.pictureName}.svg`)}></img>
         </div>
-        <CardName isSelected={false}/>
+        <CardName isSelected={false} cardName={this.props.pictureName}/>
       </div>
     );
   }

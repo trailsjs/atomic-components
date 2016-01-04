@@ -20,7 +20,9 @@ function selectedTaskRunner(state = {}, action) {
 function selectedFrontEnd(state = {}, action) {
   switch (action.type) {
     case SELECT_FRONTEND_CARD:
-      return action;
+      return Object.assign({}, state, {
+        [action.id]: 'selected'
+      });
     default:
       return state;
   }
@@ -29,7 +31,9 @@ function selectedFrontEnd(state = {}, action) {
 function selectedRouter(state = {}, action) {
   switch (action.type) {
     case SELECT_ROUTER_CARD:
-      return action;
+      return Object.assign({}, state, {
+        [action.id]: 'selected'
+      });
     default:
       return state;
   }
@@ -38,7 +42,9 @@ function selectedRouter(state = {}, action) {
 function selectedAuth(state = {}, action) {
   switch (action.type) {
     case SELECT_AUTH_CARD:
-      return action;
+      return Object.assign({}, state, {
+        [action.id]: 'selected'
+      });
     default:
       return state;
   }
