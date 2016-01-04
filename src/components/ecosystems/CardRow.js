@@ -14,7 +14,7 @@ import localStyles from './styles/CardRow.scss';
 const styles = Object.assign({}, localStyles);
 
 // Redux
-import { selectTaskRunnerCard } from '../../actions/actions';
+import { selectTaskRunnerCard, selectFrontEndCard, selectRouterCard, selectAuthCard } from '../../actions/actions';
 
 // Utils
 import data from '../../utils/cardData';
@@ -42,11 +42,11 @@ export default class CardRow extends Component {
         case 'taskrunner':
           return selectTaskRunnerCard;
         case 'frontend':
-          return selectedFrontEnd;
+          return selectFrontEndCard;
         case 'router':
-          return selectedRouter;
+          return selectRouterCard;
         case 'auth':
-          return selectedAuth;
+          return selectAuthCard;
       }
     };
 
