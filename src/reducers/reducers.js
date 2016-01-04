@@ -6,7 +6,7 @@ import {
   SELECT_AUTH_CARD
 } from '../actions/actions';
 
-function selectedTaskRunner(state = {test:'hi'}, action) {
+function selectedTaskRunner(state = {}, action) {
   switch (action.type) {
     case SELECT_TASKRUNNER_CARD:
       return Object.assign({}, state, {

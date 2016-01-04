@@ -16,6 +16,9 @@ const styles = Object.assign({}, localStyles);
 // Redux
 import { selectTaskRunnerCard } from '../../actions/actions';
 
+// Utils
+import data from '../../utils/cardData';
+
 function selectAndMap(state) {
   const { selectedTaskRunner } = state;
   return { selectedTaskRunner };
@@ -27,15 +30,14 @@ export default class CardRow extends Component {
     const { dispatch } = this.props;
     return (
       <div className={`${styles.CardRow}`} onClick={function () {
-      dispatch(selectTaskRunnerCard('bum'))
+      dispatch(selectTaskRunnerCard('bufm'))
       }}>
         <InfoIcon />
         <div className={`${styles.LanguageCardContainer}`}>
           <NoChoiceCard />
-          <LanguageCard />
-          <LanguageCard />
-          <LanguageCard />
-          <LanguageCard />
+          {data[this.props.type].map(function(thing, id) {
+            return <LanguageCard thing={thing} key={id}/>
+          })}
         </div>
       </div>
     );
