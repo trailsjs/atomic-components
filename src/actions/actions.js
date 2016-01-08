@@ -32,8 +32,9 @@ export function selectAuthCard(id) {
   }
 }
 
-export function selectNoChoiceCard() {
+export function selectNoChoiceCard(kind) {
   return {
-    type: SELECT_NO_CHOICE_CARD
+    type: SELECT_NO_CHOICE_CARD,
+    kind
   }
 }

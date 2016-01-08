@@ -7,6 +7,10 @@ import {
   SELECT_NO_CHOICE_CARD
 } from '../actions/actions';
 
+function noChoiceKind (kind) {
+
+}
+
 function selectedTaskRunner(state = {}, action) {
   switch (action.type) {
     case SELECT_TASKRUNNER_CARD:
@@ -18,7 +22,9 @@ function selectedTaskRunner(state = {}, action) {
         return Object.assign({}, state, delete state[action.id]);
       }
     case SELECT_NO_CHOICE_CARD:
-      return Object.assign({});
+      if(action.kind === 'taskrunner'){
+        return Object.assign({}, state = {});
+      }
     default:
       return state;
   }
@@ -35,7 +41,9 @@ function selectedFrontEnd(state = {}, action) {
         return Object.assign({}, state, delete state[action.id]);
       }
     case SELECT_NO_CHOICE_CARD:
-      return Object.assign({});
+      if(action.kind === 'frontend'){
+        return Object.assign({}, state = {});
+      }
     default:
       return state;
   }
@@ -52,7 +60,9 @@ function selectedRouter(state = {}, action) {
         return Object.assign({}, state, delete state[action.id]);
       }
     case SELECT_NO_CHOICE_CARD:
-      return Object.assign({});
+      if(action.kind === 'router'){
+        return Object.assign({}, state = {});
+      }
     default:
       return state;
   }
@@ -69,7 +79,9 @@ function selectedAuth(state = {}, action) {
         return Object.assign({}, state, delete state[action.id]);
       }
     case SELECT_NO_CHOICE_CARD:
-      return Object.assign({});
+      if(action.kind === 'auth'){
+        return Object.assign({}, state = {});
+      }
     default:
       return state;
   }
