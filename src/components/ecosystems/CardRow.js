@@ -14,7 +14,7 @@ import localStyles from './styles/CardRow.scss';
 const styles = Object.assign({}, localStyles);
 
 // Redux
-import { selectTaskRunnerCard, selectFrontEndCard, selectRouterCard, selectAuthCard } from '../../actions/actions';
+import { selectTaskRunnerCard, selectFrontEndCard, selectRouterCard, selectAuthCard, selectNoChoiceCard } from '../../actions/actions';
 
 // Utils
 import data from '../../utils/cardData';
@@ -75,7 +75,7 @@ export default class CardRow extends Component {
       <div className={`${styles.CardRow}`}>
         <InfoIcon />
         <div className={`${styles.LanguageCardContainer}`}>
-          <NoChoiceCard selectedCards={reducerType} />
+          <NoChoiceCard selectedCards={reducerType} selectNoChoiceCard={ () => {dispatch(selectNoChoiceCard())} } />
           {data[this.props.type].map(function (item, id) {
             return (
               <LanguageCard

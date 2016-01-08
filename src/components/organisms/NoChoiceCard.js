@@ -11,7 +11,7 @@ export default class NoChoiceCard extends Component {
   render() {
     console.log(this.props.selectedCards);
     return (
-      <div className={`${styles.NoChoiceCard} ${Object.keys(this.props.selectedCards).length === 0 ? styles.selected : null}`}>
+      <div className={`${styles.NoChoiceCard} ${Object.keys(this.props.selectedCards).length === 0 ? styles.selected : null}`} onClick={this.props.selectNoChoiceCard}>
         <i className={`fa fa-times-circle fa-5x`}></i>
       </div>
     );
@@ -19,5 +19,6 @@ export default class NoChoiceCard extends Component {
 }
 
 NoChoiceCard.propTypes = {
-  selectedCards: React.PropTypes.object.isRequired
+  selectedCards: React.PropTypes.object.isRequired,
+  selectNoChoiceCard: React.PropTypes.func.isRequired
 };

@@ -3,7 +3,8 @@ import {
   SELECT_TASKRUNNER_CARD,
   SELECT_FRONTEND_CARD,
   SELECT_ROUTER_CARD,
-  SELECT_AUTH_CARD
+  SELECT_AUTH_CARD,
+  SELECT_NO_CHOICE_CARD
 } from '../actions/actions';
 
 function selectedTaskRunner(state = {}, action) {
@@ -16,6 +17,8 @@ function selectedTaskRunner(state = {}, action) {
       } else {
         return Object.assign({}, state, delete state[action.id]);
       }
+    case SELECT_NO_CHOICE_CARD:
+      return Object.assign({});
     default:
       return state;
   }
@@ -31,6 +34,8 @@ function selectedFrontEnd(state = {}, action) {
       } else {
         return Object.assign({}, state, delete state[action.id]);
       }
+    case SELECT_NO_CHOICE_CARD:
+      return Object.assign({});
     default:
       return state;
   }
@@ -46,6 +51,8 @@ function selectedRouter(state = {}, action) {
       } else {
         return Object.assign({}, state, delete state[action.id]);
       }
+    case SELECT_NO_CHOICE_CARD:
+      return Object.assign({});
     default:
       return state;
   }
@@ -61,6 +68,8 @@ function selectedAuth(state = {}, action) {
       } else {
         return Object.assign({}, state, delete state[action.id]);
       }
+    case SELECT_NO_CHOICE_CARD:
+      return Object.assign({});
     default:
       return state;
   }
