@@ -9,9 +9,13 @@ import {
 function selectedTaskRunner(state = {}, action) {
   switch (action.type) {
     case SELECT_TASKRUNNER_CARD:
-      return Object.assign({}, state, {
-        [action.id]: 'selected'
-      });
+      if (!state[action.id]) {
+        return Object.assign({}, state, {
+          [action.id]: 'selected'
+        });
+      } else {
+        return Object.assign({}, state[action.id] = undefined);
+      }
     default:
       return state;
   }
