@@ -18,7 +18,7 @@ export default class LanguageCard extends Component {
         <div>
           <img className={`${styles.image}`} src={require(`src/assets/images/logos/${this.props.pictureName}.svg`)}></img>
         </div>
-        <CardName isSelected={false} cardName={this.props.pictureName}/>
+        <CardName isSelected={this.props.isSelected} cardName={this.props.pictureName}/>
       </div>
     );
   }
@@ -26,5 +26,6 @@ export default class LanguageCard extends Component {
 
 LanguageCard.propTypes = {
   pictureName: React.PropTypes.string.isRequired,
-  selectCard: React.PropTypes.func.isRequired
+  selectCard: React.PropTypes.func.isRequired,
+  isSelected: React.PropTypes.bool.isRequired
 };

@@ -81,7 +81,7 @@ export default class CardRow extends Component {
               <LanguageCard
                 pictureName={item}
                 key={id}
-                selected={reducerType[item] ? true : false}
+                isSelected={reducerType[item] ? true : false}
                 selectCard={() => {dispatch(selectFunc()(item))}}
               />
             )
