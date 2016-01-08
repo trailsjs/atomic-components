@@ -24,9 +24,13 @@ function selectedTaskRunner(state = {}, action) {
 function selectedFrontEnd(state = {}, action) {
   switch (action.type) {
     case SELECT_FRONTEND_CARD:
-      return Object.assign({}, state, {
-        [action.id]: 'selected'
-      });
+      if (!state[action.id]) {
+        return Object.assign({}, state, {
+          [action.id]: 'selected'
+        });
+      } else {
+        return Object.assign({}, state[action.id] = undefined);
+      }
     default:
       return state;
   }
@@ -35,9 +39,13 @@ function selectedFrontEnd(state = {}, action) {
 function selectedRouter(state = {}, action) {
   switch (action.type) {
     case SELECT_ROUTER_CARD:
-      return Object.assign({}, state, {
-        [action.id]: 'selected'
-      });
+      if (!state[action.id]) {
+        return Object.assign({}, state, {
+          [action.id]: 'selected'
+        });
+      } else {
+        return Object.assign({}, state[action.id] = undefined);
+      }
     default:
       return state;
   }
@@ -46,9 +54,13 @@ function selectedRouter(state = {}, action) {
 function selectedAuth(state = {}, action) {
   switch (action.type) {
     case SELECT_AUTH_CARD:
-      return Object.assign({}, state, {
-        [action.id]: 'selected'
-      });
+      if (!state[action.id]) {
+        return Object.assign({}, state, {
+          [action.id]: 'selected'
+        });
+      } else {
+        return Object.assign({}, state[action.id] = undefined);
+      }
     default:
       return state;
   }
