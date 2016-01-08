@@ -14,7 +14,7 @@ function selectedTaskRunner(state = {}, action) {
           [action.id]: 'selected'
         });
       } else {
-        return Object.assign({}, state, state[action.id] = undefined);
+        return Object.assign({}, state, delete state[action.id]);
       }
     default:
       return state;
@@ -29,7 +29,7 @@ function selectedFrontEnd(state = {}, action) {
           [action.id]: 'selected'
         });
       } else {
-        return Object.assign({}, state, state[action.id] = undefined);
+        return Object.assign({}, state, delete state[action.id]);
       }
     default:
       return state;
@@ -44,7 +44,7 @@ function selectedRouter(state = {}, action) {
           [action.id]: 'selected'
         });
       } else {
-        return Object.assign({}, state, state[action.id] = undefined);
+        return Object.assign({}, state, delete state[action.id]);
       }
     default:
       return state;
@@ -59,7 +59,7 @@ function selectedAuth(state = {}, action) {
           [action.id]: 'selected'
         });
       } else {
-        return Object.assign({}, state, state[action.id] = undefined);
+        return Object.assign({}, state, delete state[action.id]);
       }
     default:
       return state;
