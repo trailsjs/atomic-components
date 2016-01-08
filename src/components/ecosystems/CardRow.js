@@ -36,7 +36,7 @@ function selectAndMap(state) {
 @connect(selectAndMap)
 export default class CardRow extends Component {
   render() {
-    const { dispatch } = this.props;
+    const { dispatch,  } = this.props;
     const selectFunc = () => {
       switch (this.props.type) {
         case 'taskrunner':
@@ -47,6 +47,18 @@ export default class CardRow extends Component {
           return selectRouterCard;
         case 'auth':
           return selectAuthCard;
+      }
+    };
+    const selectReducer = (type) => {
+      switch (this.props.type) {
+        case 'taskrunner':
+          return selectTaskRunner;
+        case 'frontend':
+          return selectFrontEnd;
+        case 'router':
+          return selectRouter;
+        case 'auth':
+          return selectAuth;
       }
     };
 
