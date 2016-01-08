@@ -24,7 +24,8 @@ function selectAndMap(state) {
     selectedTaskRunner,
     selectedFrontEnd,
     selectedRouter,
-    selectedAuth } = state;
+    selectedAuth
+  } = state;
   return {
     selectedTaskRunner,
     selectedFrontEnd,
@@ -36,7 +37,14 @@ function selectAndMap(state) {
 @connect(selectAndMap)
 export default class CardRow extends Component {
   render() {
-    const { dispatch,  } = this.props;
+    const {
+      dispatch,
+      selectedTaskRunner,
+      selectedFrontEnd,
+      selectedRouter,
+      selectedAuth
+    } = this.props;
+
     const selectFunc = () => {
       switch (this.props.type) {
         case 'taskrunner':
@@ -49,18 +57,19 @@ export default class CardRow extends Component {
           return selectAuthCard;
       }
     };
-    const selectReducer = (type) => {
+
+    const reducerType = ((type) => {
       switch (this.props.type) {
         case 'taskrunner':
-          return selectTaskRunner;
+          return selectedTaskRunner;
         case 'frontend':
-          return selectFrontEnd;
+          return selectedFrontEnd;
         case 'router':
-          return selectRouter;
+          return selectedRouter;
         case 'auth':
-          return selectAuth;
+          return selectedAuth;
       }
-    };
+    })(this.props.type);
 
     return (
       <div className={`${styles.CardRow}`}>
@@ -72,6 +81,7 @@ export default class CardRow extends Component {
               <LanguageCard
                 pictureName={item}
                 key={id}
+                selected={reducerType[item] ? true : false}
                 selectCard={() => {dispatch(selectFunc()(item))}}
               />
             )
