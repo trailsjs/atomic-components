@@ -1,8 +1,20 @@
 const data = {
-  frontend: ['Browserify', 'Webpack'],
-  taskrunner: ['Grunt', 'Bower', 'Gulp'],
-  router: ['Hapi', 'Express', 'Koa'],
-  auth: ['Auth0', 'JWT', 'Passport']
+  frontend: {
+    tools: ['Browserify', 'Webpack'],
+    description: ''
+  },
+  taskrunner: {
+    tools: ['Grunt', 'Bower', 'Gulp'],
+    description: ''
+  },
+  router: {
+    tools: ['Hapi', 'Express', 'Koa'],
+    description: ''
+  },
+  auth: {
+    tools: ['Auth0', 'JWT', 'Passport'],
+    description: ''
+  }
 };
 
 export default data;

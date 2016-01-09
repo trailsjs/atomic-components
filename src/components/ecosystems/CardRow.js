@@ -76,7 +76,7 @@ export default class CardRow extends Component {
         <InfoIcon />
         <div className={`${styles.LanguageCardContainer}`}>
           <NoChoiceCard selectedCards={reducerType} selectNoChoiceCard={ () => {dispatch(selectNoChoiceCard(this.props.type))} } />
-          {data[this.props.type].map(function (item, id) {
+          {data[this.props.type].tools.map(function (item, id) {
             return (
               <LanguageCard
                 pictureName={item}

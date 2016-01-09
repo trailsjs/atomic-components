@@ -10,7 +10,6 @@ export default class CommandText extends Component {
   render() {
     return (
       <div className={`${styles.CommandText}`}>
-        CommandText
       </div>
     );
   }
