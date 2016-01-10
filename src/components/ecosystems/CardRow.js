@@ -72,20 +72,23 @@ export default class CardRow extends Component {
     })(this.props.type);
 
     return (
-      <div className={`${styles.CardRow}`}>
-        <InfoIcon />
-        <div className={`${styles.LanguageCardContainer}`}>
-          <NoChoiceCard selectedCards={reducerType} selectNoChoiceCard={ () => {dispatch(selectNoChoiceCard(this.props.type))} } />
-          {data[this.props.type].tools.map(function (item, id) {
-            return (
-              <LanguageCard
-                pictureName={item}
-                key={id}
-                isSelected={reducerType[item] ? true : false}
-                selectCard={() => {dispatch(selectFunc()(item))}}
-              />
-            )
-          })}
+      <div>
+        <div className={`${styles.mainDescription}`}>{data[this.props.type].description.main}</div>
+        <div className={`${styles.CardRow}`}>
+          <InfoIcon />
+          <div className={`${styles.LanguageCardContainer}`}>
+            <NoChoiceCard selectedCards={reducerType} selectNoChoiceCard={ () => {dispatch(selectNoChoiceCard(this.props.type))} } />
+            {data[this.props.type].tools.map(function (item, id) {
+              return (
+                <LanguageCard
+                  pictureName={item}
+                  key={id}
+                  isSelected={reducerType[item] ? true : false}
+                  selectCard={() => {dispatch(selectFunc()(item))}}
+                />
+              )
+            })}
+          </div>
         </div>
       </div>
     );

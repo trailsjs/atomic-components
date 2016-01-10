@@ -2,28 +2,28 @@ const data = {
   frontend: {
     tools: ['Browserify', 'Webpack'],
     description: {
-      main: '',
+      main: '..you like bundlers?..',
       supp: ''
     }
   },
   taskrunner: {
     tools: ['Grunt', 'Bower', 'Gulp'],
     description: {
-      main: '',
+      main: '..now pick a task runner..',
       supp: ''
     }
   },
   router: {
     tools: ['Hapi', 'Express', 'Koa'],
     description: {
-      main: '',
+      main: 'Start with you favorite server!',
       supp: ''
     }
   },
   auth: {
     tools: ['Auth0', 'JWT', 'Passport'],
     description: {
-      main: '',
+      main: '..a little bit of auth never hurt anyone..',
       supp: ''
     }
   }
