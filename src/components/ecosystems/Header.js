@@ -27,7 +27,6 @@ function selectAndMap(state) {
   };
 }
 
-@connect(selectAndMap)
 export default class Header extends Component {
   render() {
     const {
@@ -47,3 +46,5 @@ export default class Header extends Component {
     );
   }
 }
+
+export default connect(selectAndMap)(Header);

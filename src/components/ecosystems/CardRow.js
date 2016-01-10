@@ -34,7 +34,6 @@ function selectAndMap(state) {
   };
 }
 
-@connect(selectAndMap)
 export default class CardRow extends Component {
   render() {
     const {
@@ -98,3 +97,5 @@ export default class CardRow extends Component {
 CardRow.propTypes = {
   type: React.PropTypes.string.isRequired
 };
+
+export default connect(selectAndMap)(CardRow);

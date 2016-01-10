@@ -22,8 +22,12 @@ module.exports = {
   module: {
     loaders: [{
       test: /\.js$/,
-      loaders: ['babel'],
-      include: path.join(__dirname, 'src')
+      loader: 'babel',
+      query: {
+        presets: ['react', 'es2015', 'stage-0']
+      },
+      include: path.join(__dirname, 'src'),
+
     }, {
       test: /\.scss$/,
       loaders: [
