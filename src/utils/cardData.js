@@ -9,7 +9,7 @@ const data = {
   taskrunner: {
     tools: ['Grunt', 'Bower', 'Gulp'],
     description: {
-      main: '..now pick a task runner..',
+      main: '..now, for task runners..',
       supp: ''
     }
   },
