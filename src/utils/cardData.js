@@ -1,19 +1,31 @@
 const data = {
   frontend: {
     tools: ['Browserify', 'Webpack'],
-    description: ''
+    description: {
+      main: '',
+      supp: ''
+    }
   },
   taskrunner: {
     tools: ['Grunt', 'Bower', 'Gulp'],
-    description: ''
+    description: {
+      main: '',
+      supp: ''
+    }
   },
   router: {
     tools: ['Hapi', 'Express', 'Koa'],
-    description: ''
+    description: {
+      main: '',
+      supp: ''
+    }
   },
   auth: {
     tools: ['Auth0', 'JWT', 'Passport'],
-    description: ''
+    description: {
+      main: '',
+      supp: ''
+    }
   }
 };
 

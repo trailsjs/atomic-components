@@ -53,11 +53,11 @@ function selectedRouter(state = {}, action) {
   switch (action.type) {
     case SELECT_ROUTER_CARD:
       if (!state[action.id]) {
-        return Object.assign({}, state, {
+        return Object.assign({}, {
           [action.id]: 'selected'
         });
       } else {
-        return Object.assign({}, state, delete state[action.id]);
+        return Object.assign({}, delete state[action.id]);
       }
     case SELECT_NO_CHOICE_CARD:
       if(action.kind === 'router'){
