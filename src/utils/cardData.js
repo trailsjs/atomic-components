@@ -16,7 +16,7 @@ const data = {
   router: {
     tools: ['Hapi', 'Express', 'Koa'],
     description: {
-      main: 'Start with you favorite server!',
+      main: 'Start with your favorite server!',
       supp: ''
     }
   },
