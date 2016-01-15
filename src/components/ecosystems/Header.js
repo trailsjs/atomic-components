@@ -12,25 +12,18 @@ import Title from '../molecules/Title';
 import localStyles from './styles/Header.scss';
 const styles = Object.assign({}, localStyles);
 
-function selectAndMap(state) {
-  const {
-    selectedTaskRunner,
-    selectedFrontEnd,
-    selectedRouter,
-    selectedAuth
-    } = state;
+function mapPropsToState(state) {
   return {
-    selectedTaskRunner,
-    selectedFrontEnd,
-    selectedRouter,
-    selectedAuth
+    selectedTaskRunner: state.selectedTaskRunner,
+    selectedFrontEnd: state.selectedFrontEnd,
+    selectedRouter: state.selectedRouter,
+    selectedAuth: state.selectedAuth
   };
 }
 
 export default class Header extends Component {
   render() {
     const {
-      dispatch,
       selectedTaskRunner,
       selectedFrontEnd,
       selectedRouter,
@@ -47,4 +40,4 @@ export default class Header extends Component {
   }
 }
 
-export default connect(selectAndMap)(Header);
+export default connect(mapPropsToState)(Header);

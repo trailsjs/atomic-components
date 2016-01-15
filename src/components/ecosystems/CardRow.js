@@ -19,18 +19,12 @@ import { selectTaskRunnerCard, selectFrontEndCard, selectRouterCard, selectAuthC
 // Utils
 import data from '../../utils/cardData';
 
-function selectAndMap(state) {
-  const {
-    selectedTaskRunner,
-    selectedFrontEnd,
-    selectedRouter,
-    selectedAuth
-  } = state;
+function mapPropsToState(state) {
   return {
-    selectedTaskRunner,
-    selectedFrontEnd,
-    selectedRouter,
-    selectedAuth
+    selectedTaskRunner: state.selectedTaskRunner,
+    selectedFrontEnd: state.selectedFrontEnd,
+    selectedRouter: state.selectedRouter,
+    selectedAuth: state.selectedAuth
   };
 }
 
@@ -98,4 +92,4 @@ CardRow.propTypes = {
   type: React.PropTypes.string.isRequired
 };
 
-export default connect(selectAndMap)(CardRow);
+export default connect(mapPropsToState)(CardRow);

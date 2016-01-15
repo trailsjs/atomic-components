@@ -7,11 +7,7 @@ import {
   SELECT_NO_CHOICE_CARD
 } from '../actions/actions';
 
-function noChoiceKind (kind) {
-
-}
-
-function selectedTaskRunner(state = {}, action) {
+export function selectedTaskRunner(state = {}, action) {
   switch (action.type) {
     case SELECT_TASKRUNNER_CARD:
       if (!state[action.id]) {
@@ -30,7 +26,7 @@ function selectedTaskRunner(state = {}, action) {
   }
 }
 
-function selectedFrontEnd(state = {}, action) {
+export function selectedFrontEnd(state = {}, action) {
   switch (action.type) {
     case SELECT_FRONTEND_CARD:
       if (!state[action.id]) {
@@ -49,7 +45,7 @@ function selectedFrontEnd(state = {}, action) {
   }
 }
 
-function selectedRouter(state = {}, action) {
+export function selectedRouter(state = {}, action) {
   switch (action.type) {
     case SELECT_ROUTER_CARD:
       if (!state[action.id]) {
@@ -68,7 +64,7 @@ function selectedRouter(state = {}, action) {
   }
 }
 
-function selectedAuth(state = {}, action) {
+export function selectedAuth(state = {}, action) {
   switch (action.type) {
     case SELECT_AUTH_CARD:
       if (!state[action.id]) {
@@ -86,13 +82,3 @@ function selectedAuth(state = {}, action) {
       return state;
   }
 }
-
-
-const rootReducer = combineReducers({
-  selectedTaskRunner,
-  selectedFrontEnd,
-  selectedRouter,
-  selectedAuth
-});
-
-export default rootReducer;
