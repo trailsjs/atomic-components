@@ -10,6 +10,13 @@ const createStoreWithMiddleware = applyMiddleware(
   loggerMiddleware
 )(createStore);
 
-export default function configureStore(initialState) {
-  return createStoreWithMiddleware(rootReducer, initialState)
+const store = createStoreWithMiddleware(rootReducer);
+
+if(module.hot) {
+  module.hot.accept('../reducers/', () => {
+    const nextRootReducer = require('../reducers/index').default;
+    store.replaceReducer(nextRootReducer);
+  });
 }
+
+export default store;

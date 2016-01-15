@@ -7,9 +7,7 @@ import { Provider } from 'react-redux';
 import TrailsMix from './components/environments/TrailsMix';
 
 // Utils
-import configureStore from './utils/configureStore';
-
-const store = configureStore();
+import store from './utils/configureStore';
 
 render(
   <Provider store={store}>
