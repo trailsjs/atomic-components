@@ -4,7 +4,7 @@
 import React, { Component } from 'react';
 
 // Components
-import CardName from '../atoms/CardName'
+import CardName from '../atoms/CardName';
 
 // Styles
 import localStyles from './styles/LanguageCard.scss';

@@ -6,7 +6,6 @@ import { connect } from 'react-redux';
 
 // Components
 import LanguageCard from '../organisms/LanguageCard';
-import InfoIcon from '../atoms/InfoIcon';
 import NoChoiceCard from '../organisms/NoChoiceCard';
 
 // Styles
@@ -68,10 +67,9 @@ export default class CardRow extends Component {
       <div>
         <div className={`${styles.mainDescription}`}>{data[this.props.type].description.main}</div>
         <div className={`${styles.CardRow}`}>
-          <InfoIcon />
           <div className={`${styles.LanguageCardContainer}`}>
             <NoChoiceCard selectedCards={reducerType} selectNoChoiceCard={ () => {dispatch(selectNoChoiceCard(this.props.type))} } />
-            {data[this.props.type].tools.map(function (item, id) {
+            {data[this.props.type].tools.map(function(item, id) {
               return (
                 <LanguageCard
                   pictureName={item}
@@ -79,7 +77,7 @@ export default class CardRow extends Component {
                   isSelected={reducerType[item] ? true : false}
                   selectCard={() => {dispatch(selectFunc()(item))}}
                 />
-              )
+              );
             })}
           </div>
         </div>
