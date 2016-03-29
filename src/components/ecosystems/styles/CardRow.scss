@@ -1,21 +1,14 @@
 .CardRow {
   display: flex;
   flex-direction: row;
-  margin-bottom: 50px;
+  margin-bottom: 10px;
   background: #9BA9B2;
+  border-top: 15px solid #33495F;
+  border-bottom: 5px solid #33495F;
 
   .LanguageCardContainer {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
   }
-}
-
-.mainDescription {
-  text-align: center;
-  font-weight: bold;
-  font-family: "Dosis";
-  font-size: 24pt;
-  color: #3A5465;
-  margin-bottom: 15px;
 }

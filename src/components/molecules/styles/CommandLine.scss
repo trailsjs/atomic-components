@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Inconsolata);
+
 .flexContainer {
   display: flex;
   align-items: center;
@@ -17,10 +19,9 @@
 
   margin: 40px 0;
 
-  background: #F9F9F9;
-  box-shadow: 1px 2px 3px 1px rgba(0,0,0,0.10);
-  font-family: Input-Regular;
-  font-size: 24px;
-  color: #797979;
+  font-family: 'Inconsolata', ;
+  font-size: 24pt;
+  color: #33495F;
+  border: 5px solid #33495F;
   line-height: 35px;
 }

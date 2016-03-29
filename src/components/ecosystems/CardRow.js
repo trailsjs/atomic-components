@@ -65,7 +65,6 @@ export default class CardRow extends Component {
 
     return (
       <div>
-        <div className={`${styles.mainDescription}`}>{data[this.props.type].description.main}</div>
         <div className={`${styles.CardRow}`}>
           <div className={`${styles.LanguageCardContainer}`}>
             <NoChoiceCard selectedCards={reducerType} selectNoChoiceCard={ () => {dispatch(selectNoChoiceCard(this.props.type))} } />
