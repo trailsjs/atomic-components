@@ -1,10 +1,9 @@
 .HelpIcon {
-  color: #CFCFCF;
-  line-height: 37px;
-  text-shadow: 0 -1px 0 #9FBE8E, 0 0 2px white;
+  font-size: 32pt;
+  color: #33495F;
 
   &:hover {
-    color: darkgrey;
+    color: #98A9B3;
     cursor: pointer;
   }
 }
