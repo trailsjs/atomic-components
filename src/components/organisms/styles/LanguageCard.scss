@@ -1,6 +1,7 @@
 @import "src/assets/styles/fonts";
 
 .LanguageCard {
+  position: relative;
   text-align: left;
   min-width: 160px;
   min-height: 160px;
@@ -9,14 +10,26 @@
   border: 2px solid #395464;
 
 
-  margin: 20px 15px;
+  margin: 15px 10px;
 
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
 
+  .mask {
+    position: absolute;
+    z-index: 0;
+    top: -2;
+    right: 18;
+    background: #9BA9B2;
+    height: 165px;
+    width: 120px;
+  }
+
   div {
+
+    z-index: 1;
 
     display: flex;
     justify-content: center;

@@ -15,6 +15,7 @@ export default class LanguageCard extends Component {
   render() {
     return (
       <div className={`${styles.LanguageCard} ${this.props.isSelected ? styles.selected : null}`} onClick={this.props.selectCard}>
+        <div className={`${styles.mask}`}></div>
         <div>
           <img className={`${styles.image}`} src={require(`src/assets/images/logos/${this.props.pictureName}.svg`)}></img>
         </div>
