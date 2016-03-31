@@ -14,8 +14,11 @@
 }
 
 .CommandLine {
-  width: 600px;
+  position: relative;
+  z-index: 1;
+  width: 650px;
   height: 50px;
+  background: white;
 
   margin: 40px 0;
 

@@ -34,6 +34,7 @@ export default class Header extends Component {
     return (
       <div className={`${styles.flexContainer}`}>
         <Title />
+        <div className={`${styles.shadow}`}></div>
         <CommandLine />
       </div>
     );
