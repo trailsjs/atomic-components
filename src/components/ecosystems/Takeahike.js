@@ -14,6 +14,7 @@ import coffeecup from '../../assets/images/coffeecup.svg';
 import leftfoot from '../../assets/images/shelffoot.svg';
 import rightfoot from '../../assets/images/shelffoot.svg';
 import plant from '../../assets/images/plant.svg';
+import coffeepainting from '../../assets/images/coffeepainting.svg';
 
 export default class Takeahike extends Component {
   render() {
@@ -26,6 +27,7 @@ export default class Takeahike extends Component {
                 <img src={leftfoot} className={`${styles.leftfoot}`}/>
                 <img src={rightfoot} className={`${styles.rightfoot}`}/>
                 <img src={plant} className={`${styles.plant}`}/>
+                <img src={coffeepainting} className={`${styles.coffeepainting}`}/>
                 <div className={`${styles.outercabinet}`}>
                     <div className={`${styles.innercabinet}`}>
                         <CardRow type="router"/>
