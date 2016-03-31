@@ -15,6 +15,14 @@
       min-width: 780px;
       position: relative;
 
+      .coffeecup {
+        position: absolute;
+        height: 70px;
+
+        top: -70;
+        left: 30;
+      }
+
       .outercabinet {
         border-top: 7px solid #33495F;
         border-left: 7px solid #33495F;
