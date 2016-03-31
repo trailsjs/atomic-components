@@ -11,6 +11,8 @@ import styles from './styles/Takeahike.scss';
 
 // Assets
 import coffeecup from '../../assets/images/coffeecup.svg';
+import leftfoot from '../../assets/images/shelffoot.svg';
+import rightfoot from '../../assets/images/shelffoot.svg';
 
 export default class Takeahike extends Component {
   render() {
@@ -20,6 +22,8 @@ export default class Takeahike extends Component {
             <div className={`${styles.flexLeft}`}></div>
             <div className={`${styles.flexMiddle}`}>
                 <img src={coffeecup} className={`${styles.coffeecup}`}/>
+                <img src={leftfoot} className={`${styles.leftfoot}`}/>
+                <img src={rightfoot} className={`${styles.rightfoot}`}/>
                 <div className={`${styles.outercabinet}`}>
                     <div className={`${styles.innercabinet}`}>
                         <CardRow type="router"/>

@@ -23,6 +23,22 @@
         left: 30;
       }
 
+      .leftfoot {
+        position: absolute;
+        height: 50px;
+
+        bottom: -30;
+        left: 20;
+      }
+
+      .rightfoot {
+        position: absolute;
+        height: 50px;
+
+        bottom: -30;
+        right: 20;
+      }
+
       .outercabinet {
         border-top: 7px solid #33495F;
         border-left: 7px solid #33495F;
