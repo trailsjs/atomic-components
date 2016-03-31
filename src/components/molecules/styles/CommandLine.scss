@@ -2,15 +2,31 @@
 
 .flexContainer {
   display: flex;
+  position: relative;
   align-items: center;
   justify-content: space-between;
 
   .flexContainer {
+    z-index: 1;
     padding: 0 15px;
     display: flex;
     align-items: center;
 
   }
+}
+
+.wrapper {
+  position: relative;
+}
+
+.shadow {
+  position: absolute;
+  top: 50;
+  right: 20;
+  z-index: 0;
+  width: 650px;
+  height: 60px;
+  background: #9BA9B2;
 }
 
 .CommandLine {
