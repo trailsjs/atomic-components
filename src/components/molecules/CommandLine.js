@@ -5,7 +5,7 @@ import React, { Component } from 'react';
 
 // Components
 import BashDollar from '../atoms/BashDollar';
-import HelpIcon from '../atoms/HelpIcon';
+import Clipboard from '../atoms/Clipboard';
 import CommandText from '../atoms/CommandText';
 
 // Styles
@@ -22,7 +22,7 @@ export default class CommandLine extends Component {
                     <CommandText />
                 </div>
                 <div className={`${styles.flexContainer}`}>
-                    <HelpIcon />
+                    <Clipboard />
                 </div>
             </div>
         </div>
