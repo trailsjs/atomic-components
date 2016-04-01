@@ -18,6 +18,9 @@ import { selectTaskRunnerCard, selectFrontEndCard, selectRouterCard, selectAuthC
 // Utils
 import data from '../../utils/cardData';
 
+// Assets
+import sign from '../../assets/images/sign.svg';
+
 function mapPropsToState(state) {
   return {
     selectedTaskRunner: state.selectedTaskRunner,
@@ -67,6 +70,7 @@ export default class CardRow extends Component {
       <div>
         <div className={`${styles.CardRow}`}>
           <div className={`${styles.LanguageCardContainer}`}>
+            <img className={`${styles.sign}`} src={sign} />
             <NoChoiceCard selectedCards={reducerType} selectNoChoiceCard={ () => {dispatch(selectNoChoiceCard(this.props.type))} } />
             {data[this.props.type].tools.map(function(item, id) {
               return (

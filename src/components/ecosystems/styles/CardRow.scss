@@ -7,8 +7,15 @@
   border-bottom: 5px solid #33495F;
 
   .LanguageCardContainer {
+    position: relative;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+
+    .sign {
+      position: absolute;
+      height: 200px;
+      left: -80px;
+    }
   }
 }
