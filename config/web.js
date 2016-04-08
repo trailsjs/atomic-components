@@ -20,7 +20,6 @@ module.exports = {
       html: handlebars
     },
     relativeTo: __dirname,
-    helpersPath: './.tmp',
     path: './views'
   }
 }

@@ -10,7 +10,7 @@ module.exports = {
     './src/index'
   ],
   output: {
-    path: path.join(__dirname, '.tmp'),
+    path: path.join(__dirname, 'static'),
     filename: 'bundle.js',
     publicPath: '/static/'
   },
