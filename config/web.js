@@ -21,5 +21,8 @@ module.exports = {
     },
     relativeTo: __dirname,
     path: './views'
-  }
+  },
+
+  assets: 'static'
+
 }
