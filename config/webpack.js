@@ -1,3 +1,10 @@
+/**
+ * Webpack Configuration
+ * (app.config.webpack)
+ *
+ * @see http://trailsjs.io/doc/config/webpack
+ */
+
 const path = require('path');
 const webpack = require('webpack');
 
@@ -42,4 +49,5 @@ module.exports = {
       loader: 'url?limit=25000'
     }]
   }
-};
+
+}
