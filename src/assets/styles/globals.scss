@@ -1,10 +1,27 @@
 body {
   margin: 0;
 
-  //add media queries here for scaled devices
-  zoom: 1;
-  -moz-transform: scale(1);
-  -moz-transform-origin: 0 0
+  /* ----------- Large Desktop  ----------- */
+  @media screen
+  and (min-device-width: 1200px)
+  and (max-device-width: 1600px)
+  and (-webkit-min-device-pixel-ratio: 1) {
+    //add media queries here for scaled devices
+    zoom: 1;
+    -moz-transform: scale(1);
+    -moz-transform-origin: 0 0
+  }
+
+  /* ----------- Small Desktop ----------- */
+  @media screen
+  and (min-device-width: 1024px)
+  and (max-device-width: 1200px)
+  and (-webkit-min-device-pixel-ratio: 1) {
+    //add media queries here for scaled devices
+    zoom: .75;
+    -moz-transform: scale(.75);
+    -moz-transform-origin: 0 0
+  }
 
 
 }
