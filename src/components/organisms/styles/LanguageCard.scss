@@ -39,6 +39,7 @@
       max-height: 100px;
       padding-top: 25px;
       opacity: .3;
+
     }
 
   }
@@ -49,6 +50,21 @@
 
     &:hover {
       background: none;
+
+      .image {
+        opacity: 1;
+      }
+    }
+
+    .image {
+      position: absolute;
+      left: 10;
+      padding: 0;
+      height: 140px;
+      width: 140px;
+      max-width: 140px;
+      max-height: 140px;
+      opacity: 1;
     }
   }
 
