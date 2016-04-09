@@ -17,7 +17,7 @@ export default class LanguageCard extends Component {
       <div className={`${styles.LanguageCard} ${this.props.isSelected ? styles.selected : null}`} onClick={this.props.selectCard}>
         <div className={`${styles.mask}`}></div>
         <div>
-          <img className={`${styles.image}`} src={require(`src/assets/images/logos/${this.props.pictureName}.svg`)}></img>
+          <img className={`${styles.image}`} src={!this.props.isSelected ? require(`src/assets/images/logos/${this.props.pictureName}.svg`) : require(`src/assets/images/authpack.svg`)}></img>
         </div>
         <CardName isSelected={this.props.isSelected} cardName={this.props.pictureName}/>
       </div>

@@ -36,10 +36,10 @@ module.exports = {
         'sass'
       ]
     }, {
-      test: /\.(ttf|otf|eot|svg|woff(2)?)(\?[a-z0-9]+)?$/,
+      test: /\.(ttf|otf|eot|woff(2)?)(\?[a-z0-9]+)?$/,
       loader: 'file-loader?name=fonts/[name].[ext]'
     }, {
-      test: /\.(png|jpg)$/,
+      test: /\.(png|jpg|svg)$/,
       loader: 'url?limit=25000'
     }]
   }
