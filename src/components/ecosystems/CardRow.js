@@ -14,10 +14,11 @@ import localStyles from './styles/CardRow.scss';
 const styles = Object.assign({}, localStyles);
 
 // Redux
-import { selectTaskRunnerCard, selectFrontEndCard, selectRouterCard, selectAuthCard, selectNoChoiceCard, fetchText } from '../../actions/actions';
+import { selectTaskRunnerCard, selectFrontEndCard, selectRouterCard, selectAuthCard, selectNoChoiceCard } from '../../actions/actions';
 
 // Utils
 import data from '../../utils/cardData';
+import parsingService from '../../utils/parsingService';
 
 function mapPropsToState(state) {
   return {
@@ -29,32 +30,6 @@ function mapPropsToState(state) {
 }
 
 export default class CardRow extends Component {
-
-  componentWillReceiveProps(nextProps) {
-    const whichReducer = ((type) => {
-      switch (this.props.type) {
-        case 'taskrunner':
-          return 'selectedTaskRunner';
-        case 'frontend':
-          return 'selectedFrontEnd';
-        case 'router':
-          return 'selectedRouter';
-        case 'auth':
-          return 'selectedAuth';
-      }
-    })(this.props.type);
-
-    const allSelections = {
-      taskRunner: nextProps.selectedTaskRunner,
-      frontEnd: nextProps.selectedFrontEnd,
-      router: nextProps.selectedRouter,
-      auth: nextProps.selectedAuth
-    }
-
-    if (this.props[whichReducer] !== nextProps[whichReducer]) {
-      this.props.dispatch(fetchText(this.props.type, allSelections));
-    }
-  }
 
   render() {
     const {

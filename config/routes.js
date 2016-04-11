@@ -24,14 +24,6 @@ module.exports = [
     method: [ 'GET' ],
     path: '/api/v1/default/info',
     handler: 'DefaultController.info'
-  },
-
-  /**
-   * Send user data to command-line text parser
-   */
-  {
-    method: ['POST'],
-    path: '/commandLine/{reducerType}',
-    handler: 'TextController.commandLine'
   }
+
 ]

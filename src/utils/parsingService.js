@@ -1,17 +1,12 @@
-'use strict'
-
 const _ = require('lodash')
 const Service = require('trails-service')
 
-/**
- * @module ParsingService
- */
-module.exports = class ParsingService extends Service {
+export default class ParsingService {
 
   /**
    * Parse object with selection info and return install command
    */
-  parseSelections (settings) {
+  static parseSelections (settings) {
     const server = this.parseRouters(settings.router);
     const frontends = this.parseFrontEnds(settings.frontEnd);
     const taskrunners = this.parseTaskRunners(settings.taskRunner);
@@ -19,7 +14,7 @@ module.exports = class ParsingService extends Service {
     return [server, frontends, taskrunners, auths].filter((e) => e).join(' ');
   }
 
-  parseRouters (settings) {
+  static parseRouters (settings) {
     const servers = _.invertBy(settings)['selected'];
     const trailpacks = ((server) => {
       switch (server) {
@@ -35,17 +30,17 @@ module.exports = class ParsingService extends Service {
     return serverTrailPacks ? serverTrailPacks.join(' ') : '';
   }
 
-  parseTaskRunners (settings) {
+  static parseTaskRunners (settings) {
     const taskRunners = _.invertBy(settings)['selected'];
     return taskRunners ? taskRunners.join(' ') : '';
   }
 
-  parseFrontEnds (settings) {
+  static parseFrontEnds (settings) {
     const frontEnds = _.invertBy(settings)['selected'];
     return frontEnds ? frontEnds.join(' ') : '';
   }
 
-  parseAuths (settings) {
+  static parseAuths (settings) {
     const auths = _.invertBy(settings)['selected'];
     return auths ? auths.join(' ') : ''; 
   }

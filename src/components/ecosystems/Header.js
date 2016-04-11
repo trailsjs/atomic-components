@@ -12,20 +12,42 @@ import Title from '../molecules/Title';
 import localStyles from './styles/Header.scss';
 const styles = Object.assign({}, localStyles);
 
+// Utils
+import parsingService from '../../utils/parsingService';
+
 function mapPropsToState(state) {
   return {
-    text: state.async.text
+    selectedTaskRunner: state.selectedTaskRunner,
+    selectedFrontEnd: state.selectedFrontEnd,
+    selectedRouter: state.selectedRouter,
+    selectedAuth: state.selectedAuth,
   };
 }
 
 export default class Header extends Component {
   render() {
-    const { text } = this.props;
+    const {
+      dispatch,
+      selectedTaskRunner,
+      selectedFrontEnd,
+      selectedRouter,
+      selectedAuth
+    } = this.props;
+
+    const allSelections = {
+      taskRunner: selectedTaskRunner,
+      frontEnd: selectedFrontEnd,
+      router: selectedRouter,
+      auth: selectedAuth
+    };
+
+    const commandLine = parsingService.parseSelections(allSelections);
+    console.log('commandLine', commandLine);
 
     return (
       <div className={`${styles.flexContainer}`}>
         <Title />
-        <CommandLine text={text} />
+        <CommandLine text={commandLine} />
       </div>
     );
   }
