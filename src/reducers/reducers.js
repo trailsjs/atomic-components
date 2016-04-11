@@ -85,7 +85,7 @@ export function selectedAuth(state = {}, action) {
   }
 }
 
-export function text(state = {
+export function async(state = {
   isFetching: false
 }, action) {
   switch (action.type) {
