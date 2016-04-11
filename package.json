@@ -5,7 +5,7 @@
   "scripts": {
     "clean": "rimraf dist",
     "build:webpack": "NODE_ENV=production webpack --config webpack.config.prod.js",
-    "build:dev" : "NODE_ENV=development webpack --config webpack.config.dev.js",
+    "build:dev": "NODE_ENV=development webpack --config webpack.config.dev.js",
     "build": "npm run clean && npm run build:dev",
     "start": "node server.js",
     "lint": "eslint src"
@@ -64,6 +64,7 @@
   },
   "dependencies": {
     "inert": "^3.2.0",
+    "isomorphic-fetch": "^2.2.1",
     "react": "^0.14.0",
     "react-dom": "^0.14.0",
     "react-redux": "^4.0.0",

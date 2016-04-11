@@ -4,7 +4,9 @@ import {
   SELECT_FRONTEND_CARD,
   SELECT_ROUTER_CARD,
   SELECT_AUTH_CARD,
-  SELECT_NO_CHOICE_CARD
+  SELECT_NO_CHOICE_CARD,
+  REQUEST_TEXT,
+  RECEIVE_TEXT
 } from '../actions/actions';
 
 export function selectedTaskRunner(state = {}, action) {
@@ -80,5 +82,23 @@ export function selectedAuth(state = {}, action) {
       }
     default:
       return state;
+  }
+}
+
+export function text(state = {
+  isFetching: false
+}, action) {
+  switch (action.type) {
+    case REQUEST_TEXT:
+      return Object.assign({}, state, {
+        isFetching: true
+      })
+    case RECEIVE_TEXT:
+      return Object.assign({}, state, {
+        isFetching: false,
+        text: action.text
+      })
+    default:
+      return state
   }
 }
