@@ -13,7 +13,7 @@ import localStyles from './styles/Header.scss';
 const styles = Object.assign({}, localStyles);
 
 // Utils
-import parsingService from '../../utils/parsingService';
+import { parseSelections } from '../../utils/parsingService';
 
 function mapPropsToState(state) {
   return {
@@ -41,7 +41,7 @@ export default class Header extends Component {
       auth: selectedAuth
     };
 
-    const commandLine = parsingService.parseSelections(allSelections);
+    const commandLine = parseSelections(allSelections);
     console.log('commandLine', commandLine);
 
     return (
