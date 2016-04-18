@@ -75,6 +75,7 @@
     "trailpack-hapi": "^1.0.0-beta-3",
     "trailpack-repl": "^1.0.0-beta-3",
     "trailpack-router": "^1.0.0-beta-4",
+    "trailpack-webpack": "0.0.2",
     "trails": "^1.0.0-beta-1",
     "trails-controller": "^1.0.0-beta-2",
     "trails-model": "^1.0.0-beta-2",
