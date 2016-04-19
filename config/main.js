@@ -25,6 +25,7 @@ module.exports = {
    */
   paths: {
     root: path.resolve(__dirname, '..'),
-    temp: path.resolve(__dirname, '..', 'static')
+    temp: path.resolve(__dirname, '..', 'static'),
+    www: path.resolve(__dirname, '..', 'static')
   }
 }
