@@ -13,10 +13,6 @@ module.exports = {
 
   DefaultController: {
     info: [ ]
-  },
-
-  ViewController: {
-    helloWorld: "My sample policy!"
-  } 
+  }
 
 }
