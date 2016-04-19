@@ -18,17 +18,19 @@ import { selectTaskRunnerCard, selectFrontEndCard, selectRouterCard, selectAuthC
 
 // Utils
 import data from '../../utils/cardData';
+import parsingService from '../../utils/parsingService';
 
 function mapPropsToState(state) {
   return {
     selectedTaskRunner: state.selectedTaskRunner,
     selectedFrontEnd: state.selectedFrontEnd,
     selectedRouter: state.selectedRouter,
-    selectedAuth: state.selectedAuth
+    selectedAuth: state.selectedAuth,
   };
 }
 
 export default class CardRow extends Component {
+
   render() {
     const {
       dispatch,

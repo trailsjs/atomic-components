@@ -17,7 +17,7 @@ export default class CommandLine extends Component {
       <div className={`${styles.flexContainer} ${styles.CommandLine}`}>
         <div className={`${styles.flexContainer}`}>
           <BashDollar />
-          <CommandText />
+          <CommandText text={this.props.text} />
         </div>
         <div className={`${styles.flexContainer}`}>
           <HelpIcon />
