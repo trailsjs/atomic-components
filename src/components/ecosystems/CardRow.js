@@ -29,7 +29,7 @@ function mapPropsToState(state) {
   };
 }
 
-export default class CardRow extends Component {
+class CardRow extends Component {
 
   render() {
     const {

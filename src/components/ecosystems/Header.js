@@ -24,7 +24,7 @@ function mapPropsToState(state) {
   };
 }
 
-export default class Header extends Component {
+class Header extends Component {
   render() {
     const {
       dispatch,
