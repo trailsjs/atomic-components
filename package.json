@@ -10,6 +10,7 @@
     "start": "node server.js",
     "lint": "eslint src"
   },
+  "main": "src/",
   "repository": {
     "type": "git",
     "url": "https://github.com/trailsjs/trailmix.git"
@@ -63,6 +64,7 @@
     "winston": "^2.1.1"
   },
   "dependencies": {
+    "hapi-react-views": "^9.2.1",
     "inert": "^3.2.0",
     "isomorphic-fetch": "^2.2.1",
     "react": "^0.14.0",

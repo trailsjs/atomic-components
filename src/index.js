@@ -9,8 +9,8 @@ import TrailsMix from './components/environments/TrailsMix';
 // Utils
 import store from './utils/configureStore';
 
-render(
+export default (
   <Provider store={store}>
     <TrailsMix />
-  </Provider>,
-  document.getElementById('root'));
+  </Provider>
+)
