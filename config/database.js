@@ -21,7 +21,7 @@ module.exports = {
      * Define a store called "local" which uses SQLite3 to persist data.
      */
     sqlitedev: {
-      adapter: require('waterline-sqlite3'),
+      //adapter: require('waterline-sqlite3'),
       migrate: 'alter'
     }
   },

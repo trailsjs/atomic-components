@@ -1,7 +1,7 @@
 {
-  "name": "atomic-components",
+  "name": "trailmix",
   "version": "0.0.1",
-  "description": "Applying patternlab.io design systems to React components.",
+  "description": "Trails.js plugin search interface",
   "scripts": {
     "clean": "rimraf dist",
     "build:webpack": "NODE_ENV=production webpack --config webpack.config.prod.js",
@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/yejodido/atomic-components.git"
+    "url": "https://github.com/trailsjs/trailmix.git"
   },
   "keywords": [
     "react",
@@ -29,7 +29,7 @@
   ],
   "author": "Joey Di Nardo",
   "license": "MIT",
-  "homepage": "https://github.com/yejodido/atomic-components",
+  "homepage": "https://trailsjs.io/plugins",
   "devDependencies": {
     "babel-core": "~6.4.x",
     "babel-eslint": "^5.0.0-beta2",
@@ -71,17 +71,11 @@
     "redux": "^3.0.4",
     "redux-logger": "^2.2.1",
     "redux-thunk": "^1.0.1",
-    "trailpack-core": "^1.0.0-beta-3",
-    "trailpack-hapi": "^1.0.0-beta-3",
-    "trailpack-repl": "^1.0.0-beta-3",
-    "trailpack-router": "^1.0.0-beta-4",
-    "trailpack-webpack": "0.0.2",
-    "trails": "^1.0.0-beta-1",
-    "trails-controller": "^1.0.0-beta-2",
-    "trails-model": "^1.0.0-beta-2",
-    "trails-policy": "^1.0.1",
-    "trails-service": "1.0.0-beta-2",
-    "vision": "^4.1.0",
-    "waterline-sqlite3": "^1.0.0"
+    "trailpack-hapi": "^2",
+    "trailpack-repl": "^2",
+    "trailpack-router": "^2",
+    "trailpack-webpack": "latest",
+    "trails": "^2",
+    "vision": "^4.1.0"
   }
 }

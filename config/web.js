@@ -6,7 +6,8 @@
  *
  * @see {@link http://trailsjs.io/doc/config/web}
  */
-const handlebars = require('handlebars')
+
+const path = require('path')
 
 module.exports = {
 
@@ -15,12 +16,30 @@ module.exports = {
    */
   port: process.env.PORT || 3000,
 
-  views: {
-    engines: {
-      html: handlebars
+  plugins: [
+    {
+      register: require('vision'),
+      options: { }
     },
-    relativeTo: __dirname,
-    path: './views'
-  }
+    {
+      register: require('inert'),
+      options: { }
+    }
+  ],
 
+  onPluginsLoaded: function (err) {
+    // Note that `this` is Trails `app` instance
+    this.packs.hapi.server.views({
+      engines: {
+        js: require('hapi-react-views')
+      },
+      relativeTo: path.resolve(__dirname, '..'),
+      path: 'dist',
+      compileOptions: {
+        renderMethod: 'renderToString',
+        layoutPath: path.join(__dirname, '..', 'dist'),
+        layout: 'html'
+      }
+    })
+  }
 }
